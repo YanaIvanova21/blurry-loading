@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex; /*розміщення блоків-дітей в одному рядку*/
+  align-items: center; /*розміщення блоків-дітей посередині відносно боків*/
+  justify-content: center; /*розміщення блоків-дітей посередині відносно низу та верху*/
+  height: 100vh; /*надання розміри (висоти) для елемента body на 100% висоти сторінки браузера*/
+  overflow: hidden; /*приховує скрол-бар за замовчуванням*/
+  margin: 0;
+}
+
+.bg {
+  background-image: url("https://images.unsplash.com/photo-1621165399246-52590f2504e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(
+    100vh + 80px
+  ); /*щоб змістити картинку і не було видно білого обрамлення*/
+  width: calc(
+    100vw + 80px
+  ); /*щоб змістити картинку і не було видно білого обрамлення*/
+  z-index: -1;
+  position: absolute;
+  top: -40px; /*щоб змістити картинку і не було видно білого обрамлення*/
+  left: -40px; /*щоб змістити картинку і не було видно білого обрамлення*/
+  filter: blur(
+    0px
+  ); /*блур додає біле обрамлення картинці, але потрібно прибрати*/
+}
+
+.loading-text {
+  color: white;
+  font-size: 50px;
+}
